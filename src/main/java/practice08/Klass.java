@@ -1,13 +1,21 @@
 package practice08;
 
-public class Klass {
-  private  int number;
+public class Klass extends practice07.Klass {
 
-  public Klass(int num){
-      this.number = num;
-  }
+    private  Student leader;
+
+    public Klass(int num){
+        super(num);
+    }
 
     public int getNumber() {
-        return number;
+        return super.getNumber();
+    }
+    public  void assignLeader(Student stu){
+        leader = stu;
+    }
+
+    public Student getLeader() {
+        return leader;
     }
 }
