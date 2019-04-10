@@ -11,6 +11,8 @@ public class Person extends common.Person {
 
     @Override
     public boolean equals(Object person) {
+        if(person == null)
+            return false;
         return  id == ((Person)person).id;
     }
 }
