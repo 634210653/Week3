@@ -1,10 +1,9 @@
 package practice10;
 
-public class Person extends common.Person {
+public class Person extends practice08.Person {
 
-    public Person(String name, int age) {
-        super(name, age);
+    public Person(int id, String name, int age) {
+        super(id,name, age);
     }
 
 }
-
