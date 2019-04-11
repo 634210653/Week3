@@ -30,6 +30,11 @@ public class Teacher extends  Person{
         return "Class "+ classes.stream().map(practice07.Klass::getNumber).map(String::valueOf).reduce((a,b)-> a+", "+b).get();
     }
 
+    //tell leader
+    public void  say(String sentences){
+        System.out.print(sentences);
+    }
+
     public LinkedList<Klass> getClasses() {
         return classes;
     }

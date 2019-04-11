@@ -17,7 +17,7 @@ public class Klass extends practice07.Klass {
 
         students.add(stu);
         for(Teacher t: teachers){
-            System.out.print(String.format("I am %s. I know %s has joined %s.\n",t.getName(), stu.getName(),getDisplayName()));
+            t.say(String.format("I am %s. I know %s has joined %s.\n",t.getName(), stu.getName(),getDisplayName()));
         }
     }
 
@@ -26,7 +26,7 @@ public class Klass extends practice07.Klass {
 
             leader = stu;
             for(Teacher t: teachers){
-                System.out.print(String.format("I am %s. I know %s become Leader of %s.\n",t.getName(), stu.getName(),getDisplayName()));
+                t.say(String.format("I am %s. I know %s become Leader of %s.\n",t.getName(), stu.getName(),getDisplayName()));
             }
 
         } else {
